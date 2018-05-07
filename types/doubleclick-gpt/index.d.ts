@@ -1,4 +1,4 @@
-// Type definitions for Google Publisher Tag v199
+// Type definitions for Google Publisher Tag v203
 // Project: https://developers.google.com/doubleclick-gpt/reference
 // Definitions by: John Wright <https://github.com/johngeorgewright>
 //                 Steven Joyce <https://github.com/steven-joyce>
@@ -101,6 +101,7 @@ declare namespace googletag {
         setClickUrl(url: string): PassbackSlot;
         setForceSafeFrame(forceSafeFrame: boolean): PassbackSlot;
         setTagForChildDirectedTreatment(value: number): PassbackSlot;
+        setTagForUnderAgeOfConsent(value: number): PassbackSlot;
         setTargeting(key: string, value: string | string[]): PassbackSlot;
         updateTargetingFromMap(map: Object): PassbackSlot;
     }
@@ -134,6 +135,7 @@ declare namespace googletag {
         setRequestNonPersonalizedAds(nonPersonalizedAds: number): PubAdsService;
         setSafeFrameConfig(config: SafeFrameConfig): PubAdsService;
         setTagForChildDirectedTreatment(value: number): PubAdsService;
+        setTagForUnderAgeOfConsent(opt_value?: number): PubAdsService;
         setTargeting(key: string, value: string | string[]): PubAdsService;
         setVideoContent(videoContentId: string, videoCmsId: string): void;
         updateCorrelator(): PubAdsService;
